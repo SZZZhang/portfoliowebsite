@@ -11,7 +11,7 @@ class Navbar extends Component {
 
     render () {
         return (
-        <MDBNavbar color="aqua-gradient" scrolling fixed="top" dark expand="md">
+        <MDBNavbar color="white" scrolling fixed="top" dark expand="md">
         <MDBNavbarBrand href="/">
           <strong className="white-text">Shirley Zhang</strong>
         </MDBNavbarBrand>
