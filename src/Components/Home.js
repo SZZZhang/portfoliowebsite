@@ -3,7 +3,7 @@ import lottie from "lottie-web";
 import animationData from '../Assets/animationData.json';
 import './Home.css';
 
-import {Container} from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 class Home extends Component {
 
@@ -19,8 +19,10 @@ class Home extends Component {
 
   render() {
     return (
-        <Container className="full-screen">
-            <div style={{ height: "100%", display: "block" }}ref={ref => this.ref = ref} />
+        <Container className="full-screen" >
+            <div id="animation" ref={ ref => this.ref = ref } />
+            <h1 id="hello-txt">Hi. I'm Shirley Zhang</h1>
+            <mark id="developer-txt">Developer</mark>
         </Container>
     );
   }
