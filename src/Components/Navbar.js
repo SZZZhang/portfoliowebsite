@@ -4,16 +4,16 @@ import {
     } from "mdbreact";
 
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logo from '../Assets/logo.svg';
 
 class Navbar extends Component {
 
     render () {
         return (
-        <MDBNavbar color="white" scrolling fixed="top" dark expand="md">
+        <MDBNavbar color="transparent" scrolling fixed="top" light expand="md" style={{ boxShadow: 'none'}}>
         <MDBNavbarBrand href="/">
-          <strong className="white-text">Shirley Zhang</strong>
+          <img src={logo} alt={'Shirley Zhang'} style={{ width: '3rem', margin: '.5rem' }} />
         </MDBNavbarBrand>
         <MDBNavbarToggler />
         <MDBCollapse id="navbarCollapse3" navbar>
@@ -21,7 +21,8 @@ class Navbar extends Component {
             
           </MDBNavbarNav>
           <MDBNavbarNav right>
-            <MDBNavLink id="nav-links" to="/programming">Programming</MDBNavLink>
+            <MDBNavLink id="nav-links" to="/resume">Resume</MDBNavLink>
+            <MDBNavLink id="nav-links" to="/projects">Projects</MDBNavLink>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>

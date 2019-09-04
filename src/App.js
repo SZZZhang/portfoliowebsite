@@ -4,7 +4,8 @@ import { Router, Route, browserHistory, IndexRoute, BrowserRouter } from "react-
 
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
-import Programming from './Components/Programming';
+import Projects from './Components/Projects';
+import Resume from './Components/Resume';
 import NotFound from './Components/NotFound';
 
 
@@ -15,9 +16,10 @@ function App() {
       <BrowserRouter>
         <Navbar/>
         <switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/products' component={Programming} /> 
-          <Route component={NotFound}/>
+          <Route exact path='/' component={ Home } />
+          <Route exact path='/projects' component={ Projects } /> 
+          <Route exact path='/resume' component={ Resume } />
+          <Route component={ NotFound }/>
         </switch>
       </BrowserRouter>
     </div>
